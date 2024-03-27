@@ -30,11 +30,11 @@ bool FBullCOwGame::IsIsogram(FString Guess) const
 	return true;
 }
 
-FString FBullCOwGame::GetRandomWord()//generates a random word form an array of 10 preset words
+FString FBullCOwGame::GetRandomWord()//generates a random word from an array of 10 preset words
 {
 	srand(time(NULL)); //initialize the random seed
 	const FString RandomWord[10] = { "planet", "ant", "path","fish","podcast", "persian","trouble","mexican","object","cat"};
-	int32 RandIndex = rand() % 10; //generates a random number between 0 and 3
+	int32 RandIndex = rand() % 10; //generates a random number between 0 and 10
 	return RandomWord[RandIndex];
 }
 
